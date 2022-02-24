@@ -1,4 +1,4 @@
-package db
+package com.example.fourth_task.db
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -9,7 +9,7 @@ import javax.persistence.Id
 @Entity
 open class Person(
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     open var id: Int,
 
     open var name: String,

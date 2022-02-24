@@ -1,4 +1,4 @@
-package db
+package com.example.fourth_task.db
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
@@ -10,7 +10,7 @@ interface PersonService{
 }
 
 @Service
-class PersonServiceImp: PersonService{
+class PersonServiceImp: PersonService {
 
     @Autowired
     lateinit var personRepo: PersonRepo
